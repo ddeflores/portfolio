@@ -1,38 +1,145 @@
-.App {
-  text-align: center;
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #0A1828;
+    width: 100%;
+    overflow-x: hidden;
+    padding-bottom: 50px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.bottomContainer {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+
+.navbar {
+    background-color: #0A1828;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: top 0.7s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 5px solid #BFA181;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .navbarContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
-  to {
-    transform: rotate(360deg);
-  }
+
+.name {
+    font-size: 25px;
+    color: #BFA181;
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+
+.redirects {
+    font-size: 16px;
+    color: #BFA181;
+    margin-inline: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.aboutMe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-bottom: 2px solid #BFA181;
+}
+
+.introduction {
+    margin-top: 50px;
+    font-size: 30px;
+    color: #BFA181;
+    font-weight: 700;
+}
+
+.preface {
+    font-size: 16px;
+    color: #BFA181;
+    font-weight: 200;
+}
+
+.paragraph {
+    font-size: 16px;
+    color: #BFA181;
+    margin-top: 12px;
+    font-weight: 400;
+}
+
+.conclusion {
+    font-size: 16px;
+    color: #BFA181;
+    margin-top: 12px;
+    font-weight: 700;
+    margin-bottom: 100px;
+}
+
+.body {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-top: 2px solid #BFA181;
+}
+
+.projects {
+    color: #BFA181;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.links {
+    margin-top: 50px;
+    border-bottom: 2px solid #BFA181;
+}
+
+.extras {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background-color: #192841;
+    border-radius: 12px;
+    margin-top: 100px;
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+}
+
+
+.information {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: #BFA181;
+    font-weight: bold;
+    width: 100%;
+    padding-top: 20px;
+    text-align: center;
 }
