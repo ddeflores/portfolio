@@ -71,7 +71,7 @@ function App() {
                     <div class="name">Daniel DeFlores</div>
                     <div class="navbarContainer">
                             <a href={resume} class="redirects">
-                                <div>My Resume</div>
+                                <div>Resume</div>
                             </a>
                             <div class="redirects" onClick={handleProjectsClick}>Projects</div>
                             <div class="redirects" onClick={handleContactClick}>Contact</div>
@@ -87,10 +87,13 @@ function App() {
                     <div class="aboutMe">
                         <div class="introduction">
                             Hey, my name is Dan.
+                        </div>                        
+                        <img src={headshot} alt="me" height={400} width={270}/>
+                        <div class="preface">
+                        I'm an aspiring software engineer. 
                         </div>
-                        <img src={headshot} alt="me" height={400} width={270} style={{paddingTop: '20px'}}/>
-                        <div class="preface" style={{padding: '20px'}}>
-                            I'm an aspiring software engineer. Before I show you some of my work, here's a little bit about me.
+                        <div class="preface">
+                            Before I show you some of my work, here's a little bit about me.
                         </div>
                         <div class="paragraph" style={{paddingTop: '75px', borderTop: '2px solid #BFA181'}}>
                         I love coffee and trying out new coffee shops whenever I go somewhere new. 
