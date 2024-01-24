@@ -12,41 +12,54 @@ import headshot from './/professional-headshot.jpg';
 
 function App() {
 
+    // Have each project fade in from the bottom on scroll
     useEffect(() => {
         const handleScroll = () => {
-            const sections = document.querySelectorAll('.section');
+            const sections = document.querySelectorAll('.section')
             sections.forEach(section => {
-                const sectionTop = section.getBoundingClientRect().top;
-                const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
-                const threshold = viewportHeight * 0.99;
+                const sectionTop = section.getBoundingClientRect().top
+                const viewportHeight = window.innerHeight || document.documentElement.clientHeight
+                const threshold = viewportHeight * 0.99
                 
                 if (sectionTop <= threshold) {
-                    section.classList.add('visible');
+                    section.classList.add('visible')
                 } else {
-                    section.classList.remove('visible');
+                    section.classList.remove('visible')
                 }
-            });
-        };
+            })
+        }
         window.addEventListener('scroll', handleScroll);
-    }, []);
+    }, [])
     
+    // Scroll to projects section on click
     const handleProjectsClick = async () => {
-        const elmntToView = document.getElementById("projects");
-        elmntToView.scrollIntoView({behavior: 'smooth'}); 
+        const elmntToView = document.getElementById("projects")
+        elmntToView.scrollIntoView({behavior: 'smooth'})
     }
-      
 
+    // Scroll back to the top on click
+    const handleBackToTopClick = async () => {
+        const elmntToView = document.getElementById("top")
+        elmntToView.scrollIntoView({behavior: 'smooth'})
+    }
+
+    // Show/hide the navbar. Shows when at the top or bottom
     window.onscroll = function() {scrollFunction()};
     function scrollFunction() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            document.getElementById("navbar").style.top = "-200px";
+        let scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        let windowHeight = window.innerHeight;
+        let documentHeight = document.documentElement.offsetHeight;
+        const threshold = 5;
+
+        if (scrollTop <= 20 || (scrollTop + windowHeight + threshold) >= documentHeight) {
+            document.getElementById("navbar").style.top = "0"; // show navbar
         } else {
-            document.getElementById("navbar").style.top = "0";
+            document.getElementById("navbar").style.top = "-200px"; // hide navbar
         }
     }
 
     return (
-        <div class="container">
+        <div class="container" id="top">
             <div class="navbar" id="navbar">
                 <div class="name">Daniel DeFlores</div>
                 <div class="navbarContainer">
@@ -87,12 +100,12 @@ function App() {
                     </span>
                     <div style={{height: '10px'}}/>
                 </div>       
-                <div class="body">
+                <div class="body" id="projects">
                     <div class="section">
                         <div class="introduction">
                             Here are some of the projects I've worked on.
                         </div>
-                        <div class="preface" id="projects">
+                        <div class="preface">
                         (You can click on the titles and check them out!)
                         </div>
                     </div>
@@ -200,6 +213,9 @@ function App() {
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="bottom" onClick={handleBackToTopClick}>
+                Back To Top
             </div>
         </div>
     )
