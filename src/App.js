@@ -37,6 +37,12 @@ function App() {
         elmntToView.scrollIntoView({behavior: 'smooth'})
     }
 
+    // Scroll to projects section on click
+    const handleContactClick = async () => {
+        const elmntToView = document.getElementById("thankYou")
+        elmntToView.scrollIntoView({behavior: 'smooth'})
+    }
+
     // Scroll back to the top on click
     const handleBackToTopClick = async () => {
         const elmntToView = document.getElementById("top")
@@ -68,6 +74,7 @@ function App() {
                                 <div>My Resume</div>
                             </a>
                             <div class="redirects" onClick={handleProjectsClick}>Projects</div>
+                            <div class="redirects" onClick={handleContactClick}>Contact</div>
                             <a href="https://www.linkedin.com/in/danieldeflores/" style={{marginInline: '5px'}}>
                                 <img src={linkedin} alt="linkedin" height="40" width="40"/>
                             </a>
@@ -136,7 +143,7 @@ function App() {
                             </div>
                             <div class="section">
                                 <div class="links">
-                                    <a href="https://studbuddy.netlify.app/" style={{color: '#0e1b29'}}>
+                                    <a href="https://studbuddy.netlify.app/" style={{textDecoration: 'none'}}>
                                         <div class="name">StudyBuddy</div>
                                     </a>
                                     <h3>Tech: React Native, TypeScript, Expo, Firebase</h3>
@@ -154,7 +161,7 @@ function App() {
                             </div>
                             <div class="section">
                                 <div class="links">
-                                    <a href="https://eorev.github.io/Chirp/" style={{color: '#0e1b29'}}>
+                                    <a href="https://eorev.github.io/Chirp/" style={{textDecoration: 'none'}}>
                                         <div class="name">Chirp</div>
                                     </a>
                                     <h3>Tech: React, TypeScript, Firebase</h3>
@@ -178,7 +185,9 @@ function App() {
                                         </div>
                                     </a>
                                     <h3>Tech: Java, Java Swing</h3>
-                                    <img src={chess} alt="chessgame" height="200" width="200"></img>
+                                    <a href="https://github.com/ddeflores/ChessGame">
+                                        <img src={chess} alt="chessgame" height="200" width="200"/>
+                                    </a>
                                     <p style={{ marginBottom: '50px'}}>
                                     I wanted to practice my Object Oriented Programming skills and figured Chess was a great
                                     starting point, especially since I'm quite passionate about it! Unfortunately I don't have
@@ -192,7 +201,7 @@ function App() {
                                 <div>Thank you for taking the time to read all of this!</div>
                                 <div class="name" style={{marginTop: '10px'}}>I'd love to get to know more about you.</div>
                             </div>
-                            <div class="thankYou">
+                            <div class="thankYou" id="thankYou">
                                 <div>
                                         Email Me At:
                                 </div>
