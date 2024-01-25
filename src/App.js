@@ -6,10 +6,13 @@ import linkedin from './linkedin.png';
 import github from './/github.webp';
 import React, { useEffect} from 'react';
 import resume from './resume.pdf';
+import poster from './poster.pdf';
+import posterImg from './/posterImage.jpg'
 import foodfinderVideo from './/foodfinderDemo.mov';
-import foodfinder from './/foodfinder.PNG'
+import foodfinder from './/foodfinder.PNG';
 import headshot from './/professional-headshot.jpg';
-
+import research from './CNN_Phishing_Detection.pdf'
+import researchReport from './CNN vs RNN for Phishing Detection.pdf';
 function App() {
 
     // Have each project fade in from the bottom on scroll
@@ -97,7 +100,7 @@ function App() {
                         </div>
                         <div class="paragraph" style={{paddingTop: '75px', borderTop: '2px solid #BFA181'}}>
                         I love coffee and trying out new coffee shops whenever I go somewhere new. 
-                        Its also my favorite pre-workout for lifting or running! If you're interested,
+                        It's also my favorite pre-workout for lifting or running! If you're interested,
                         my bench PR is 265x3 and my fastest mile is 6:15! I love working to improve these numbers.
                         </div>
                         <div class="paragraph">
@@ -117,7 +120,7 @@ function App() {
                                 Here are some of the projects I've worked on.
                             </div>
                             <div class="preface">
-                            (You can click on the titles and check them out!)
+                            (You can click on the titles/icons and check them out!)
                             </div>
                         </div>
                         <div class="projects">
@@ -135,12 +138,41 @@ function App() {
                                     </video>
                                     <p style={{ marginBottom: '50px'}}>
                                     This is my most exciting project yet! I've always wanted a MyFitnessPal type app, but with a smoother, more modern UI.
-                                    Hence why I started making FoodFinder. It's still a work in progress, but I'm super excited to keep adding more features. 
+                                    Hence, why I started making FoodFinder. It's still a work in progress, but I'm super excited to keep adding more features. 
                                     I eventually want to post this to the App Store and Google Play Store. The coolest feature in my opinion is the ability to
-                                    upload images of foods and receive estimations of how many calories are in them. Perfect for people who aren't very well versed
+                                    upload images of foods and receive estimations of how many calories are in them. Perfect for people who aren't very well-versed
                                     in nutrition! For the time being, I don't have this deployed anywhere, but I included a demo video above. It showcases how 
                                     users can log food by taking pictures, how users can log food manually, and a few other things like editing and deleting foods 
                                     and the acount page.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="section">
+                                <div class="links">
+                                    <a href={poster} style={{textDecoration: 'none'}}>
+                                        <div class="name">Phishing Detector CNN Model</div>
+                                    </a>
+                                    <h3>Tech: Python, Keras/Tensorflow</h3>
+                                    <a href={poster}>
+                                        <img src={posterImg} alt="neural network research" height="400" width="300"/>
+                                    </a>
+                                    <p style={{ marginBottom: '50px'}}>
+                                        This is an outline of research my peer and I conducted. We compared convolutional neural networks (CNN) to recurrent
+                                        neural networks (RNN) in their effectiveness classifying URLs as phishing or non-phishing. We trained each
+                                        model on a dataset of over 800,000 URLs, and eventually concluded that CNNs are more effective when 
+                                        processing time is taken into account. It proved to be a great learning experience, and it also sparked my interest
+                                        in AI/ML! If you want to check out my portion of the work (the CNN model), you can
+                                        <span style={{textDecoration: 'underline', cursor: 'pointer'}}>
+                                            <a href={research} class='redirects'>
+                                            view my Colab notebook here.
+                                            </a>
+                                        </span>
+                                         If you're interested in a more in-depth analysis,
+                                        <span style={{textDecoration: 'underline', cursor: 'pointer'}}>
+                                            <a href={researchReport} class='redirects'>
+                                                here is the full research report
+                                            </a>
+                                        </span>
                                     </p>
                                 </div>
                             </div>
@@ -157,8 +189,8 @@ function App() {
                                     This was my first time using React Native and Expo. I thought a great way to learn the basics would be to 
                                     make a file storage/sharing app similar to Google Drive.
                                     With StudyBuddy, users can either choose any file from their system, or make a text file inside of the app.
-                                    They can also share these files with people they add as friends via user ID.
-                                    This is a pretty bare bones application, but it's pretty cool to look back on this and see how far I've come!
+                                    They can also share these files with people they add as friends, via user ID.
+                                    This is a pretty bare-bones application, but it's pretty cool to look back on this and see how far I've come!
                                     </p>
                                 </div>
                             </div>
@@ -175,7 +207,7 @@ function App() {
                                     I worked on Chirp with a team for a 24 hour hackathon, HenHacks 2023, which was hosted by the University of Delaware.
                                     Chirp was designed for students of all ages and CS backgrounds learning sorting algorithms. Our main focus was to have 
                                     a very clean UI that would be easily accessible, even for children. My team and I achieved second place in the Educational
-                                    category for our design and efforts out of over 150 competitors! I'm very proud of the outcome of our hard work, but regardless 
+                                    category for our design and efforts, out of over 150 competitors! I'm very proud of the outcome of our hard work, but regardless 
                                     of how we did I'm glad I had such a great learning experience for my first hackathon!
                                     </p>
                                 </div>
@@ -194,7 +226,7 @@ function App() {
                                     <p style={{ marginBottom: '50px'}}>
                                     I wanted to practice my Object Oriented Programming skills and figured Chess was a great
                                     starting point, especially since I'm quite passionate about it! Unfortunately I don't have
-                                    this deployed anywhere except, but I included a screenshot of the GUI that I made.
+                                    this deployed anywhere, but I included a screenshot of the GUI that I made.
                                     </p>
                                 </div>
                             </div>
