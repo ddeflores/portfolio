@@ -6,7 +6,7 @@ import studybuddy from './/studybuddy.png';
 import linkedin from './linkedin.png';
 import github from './/github.webp';
 import React, { useEffect} from 'react';
-import resume from './resume.pdf';
+import resume from './Daniel_DeFlores_resume.pdf';
 import poster from './poster.pdf';
 import posterImg from './/posterImage.jpg'
 import foodfinderVideo from './/foodfinderDemo.mov';
