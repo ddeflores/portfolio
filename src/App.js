@@ -92,31 +92,37 @@ function App() {
                         <div class="introduction">
                             Hey, my name is Dan.
                         </div>                        
-                        <img src={headshot} alt="me" height={400} width={270}/>
+                        <img src={headshot} alt="me" height={400} width={270} style={{margin: 20}}/>
                         <div class="preface">
                         I'm an aspiring software engineer. 
                         </div>
                         <div class="preface" style={{borderBottom: '2px solid #BFA181', paddingBottom: '20px'}}>
                             Before I show you some of my work, here are some insights about my connection with computer science.
                         </div>
-                        <div class="paragraph" style={{paddingTop: '75px'}}>
-                            Computer science, to me, is not just a field of study but an outlet for creativity.
-                            I have always loved tinkering with the technology around me and figuring out how things work.
-                            Computer science gives me the opportunity to solve intricate problems in creative ways. It 
-                            offers the unique potential to transform the world, and my primary motivation lies in
-                            developing impactful solutions that address real-world challenges. Whether for healthcare, 
-                            environmental sustainability, or education, each line of code is a step towards a better future.
+                        <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', paddingTop: '75px'}}>
+                            <div class="name">Why Computer Science?</div>
+                            <div class="paragraph">
+                                Computer science, to me, is not just a field of study but an outlet for creativity.
+                                I have always loved tinkering with the technology around me and figuring out how things work.
+                                Computer science gives me the opportunity to solve intricate problems in creative ways. It 
+                                offers the unique potential to transform the world, and my primary motivation lies in
+                                developing impactful solutions that address real-world challenges. Whether for healthcare, 
+                                environmental sustainability, or education, each line of code is a step towards a better future.
+                            </div>
                         </div>
-                        <div class="paragraph">
-                            My main career goal is to align with an organization that shares my perspective on the transformative 
-                            power of computer science.  I am deeply passionate about creating dependable software that is accessible
-                            to everyone and am particularly driven to harness AI and machine learning to foster positive change. The 
-                            potential of AI to revolutionize mental healthcare and offer life-changing support to those affected by 
-                            mental illness truly resonates with me. I would love to contribute and grow in an environment that is actively
-                            shaping solutions that heal and empower others.
+                        <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', paddingTop: '20px'}}>
+                            <div class="name">My Goals</div>
+                            <div class="paragraph">
+                                My main career goal is to align with an organization that shares my perspective on the transformative 
+                                power of computer science.  I am deeply passionate about creating dependable software that is accessible
+                                to everyone and am particularly driven to harness AI and machine learning to foster positive change. The 
+                                potential of AI to revolutionize mental healthcare and offer life-changing support to those affected by 
+                                mental illness truly resonates with me. I would love to contribute and grow in an environment that is actively
+                                shaping solutions that heal and empower others.
+                            </div>
                         </div>
                         <span class="conclusion">
-                            If you've taken the time to read through everything, feel free to explore some of my projects below!
+                            If you've taken the time to read this, feel free to explore some of my projects below!
                         </span>
                         <div style={{height: '10px'}}/>
                     </div>       
@@ -130,12 +136,12 @@ function App() {
                             <div class="section">
                                 <div class="links" style={{borderTop: '2px solid #BFA181'}}>
                                     <a style={{textDecoration: 'none'}} href="https://github.com/ddeflores/Food-Finder">
-                                        <div class="name" style={{marginTop: '50px'}}>
+                                        <h2 style={{marginTop: '50px', color: '#BFA181', textDecoration: 'underline'}}>
                                             FoodFinder
-                                        </div>
+                                        </h2>
                                     </a>
-                                    <h3>Tech: React Native, JavaScript, Expo, Firebase, Tensorflow.js, Python, OpenAI API</h3>
-                                    <video poster={foodfinder} playsInline controls loop muted width="250">
+                                    <div class="name">Tech: React Native, JavaScript, Expo, Firebase, Tensorflow.js, Python, OpenAI API</div>
+                                    <video poster={foodfinder} playsInline controls loop muted width="250" style={{margin: 20}}>
                                         <source src={foodfinderVideo} />
                                         Your browser does not support the video tag.
                                     </video>
@@ -153,11 +159,11 @@ function App() {
                             <div class="section">
                                 <div class="links">
                                     <a href="https://eorev.github.io/Chirp/" style={{textDecoration: 'none'}}>
-                                        <div class="name">Chirp</div>
+                                        <h2 style={{marginTop: '50px', color: '#BFA181', textDecoration: 'underline'}}>Chirp</h2>
                                     </a>
-                                    <h3>Tech: React, TypeScript, Firebase</h3>
+                                    <div class="name">Tech: React, TypeScript, Firebase</div>
                                     <a href="https://eorev.github.io/Chirp/">
-                                        <img src={chirp} alt="chirp" height="200" width="220"/>
+                                        <img src={chirp} alt="chirp" height="200" width="220" style={{margin: 20}}/>
                                     </a>
                                     <p style={{ marginBottom: '50px'}}>
                                     I worked on Chirp with a team for a 24 hour hackathon, HenHacks 2023, which was hosted by the University of Delaware.
@@ -171,11 +177,11 @@ function App() {
                             <div class="section">
                                 <div class="links">
                                     <a href={poster} style={{textDecoration: 'none'}}>
-                                        <div class="name">Phishing Detector CNN Model</div>
+                                        <h2 style={{marginTop: '50px', color: '#BFA181', textDecoration: 'underline'}}>Phishing Detector CNN Model</h2>
                                     </a>
-                                    <h3>Tech: Python, Keras/Tensorflow</h3>
+                                    <div class="name">Tech: Python, Keras/Tensorflow</div>
                                     <a href={poster}>
-                                        <img src={posterImg} alt="neural network research" height="400" width="300"/>
+                                        <img src={posterImg} alt="neural network research" height="400" width="300" style={{margin: 20}}/>
                                     </a>
                                     <p style={{ marginBottom: '50px'}}>
                                         This is some research my peer and I conducted. We compared convolutional neural networks (CNN) to recurrent
@@ -200,11 +206,11 @@ function App() {
                             <div class="section">
                                 <div class="links">
                                     <a href="https://studbuddy.netlify.app/" style={{textDecoration: 'none'}}>
-                                        <div class="name">StudyBuddy</div>
+                                        <h2 style={{marginTop: '50px', color: '#BFA181', textDecoration: 'underline'}}>StudyBuddy</h2>
                                     </a>
-                                    <h3>Tech: React Native, TypeScript, Expo, Firebase</h3>
+                                    <div class="name">Tech: React Native, TypeScript, Expo, Firebase</div>
                                     <a href="https://studbuddy.netlify.app/">
-                                        <img src={studybuddy} alt="studybuddy" height="200" width="220"/>
+                                        <img src={studybuddy} alt="studybuddy" height="200" width="220" style={{margin: 20}}/>
                                     </a>
                                     <p style={{ marginBottom: '50px'}}>
                                     This was my first time using React Native and Expo. I thought a great way to learn the basics would be to 
@@ -218,12 +224,12 @@ function App() {
                             <div class="section">
                                 <div class="links">
                                     <a href="https://github.com/ddeflores/ChessGame" style={{textDecoration: 'none'}}>
-                                        <div class="name">
+                                        <h2 style={{marginTop: '50px', color: '#BFA181', textDecoration: 'underline'}}>
                                             Chess Game
-                                        </div>
+                                        </h2>
                                     </a>
-                                    <h3>Tech: Java, Java Swing</h3>
-                                    <video poster={chess} playsInline controls loop muted width="250">
+                                    <div class="name">Tech: Java, Java Swing</div>
+                                    <video style={{margin: 20}} poster={chess} playsInline controls loop muted width="250">
                                         <source src={chessDemo}/>
                                         Your browser does not support the video tag.
                                     </video>
