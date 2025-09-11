@@ -2,11 +2,10 @@ import './App.css';
 import chirp from './/chirp.png';
 import chess from './/chess.png'
 import chessDemo from './Chess Game Demo.mov';
-import studybuddy from './/studybuddy.png';
 import linkedin from './linkedin.png';
 import github from './/github.webp';
 import React, { useEffect} from 'react';
-import resume from './resume.pdf';
+import resume from './Daniel_DeFlores_resume.pdf';
 import poster from './poster.pdf';
 import posterImg from './/posterImage.jpg'
 import foodfinderVideo from './/foodfinderDemo.mov';
@@ -14,6 +13,7 @@ import foodfinder from './/foodfinder.PNG';
 import headshot from './/professional-headshot.jpg';
 import research from './CNN_Phishing_Detection.pdf'
 import researchReport from './CNN vs RNN for Phishing Detection.pdf';
+import capitaltg from './/capitaltg.png';
 function App() {
 
     // Have each project fade in from the bottom on scroll
@@ -89,37 +89,83 @@ function App() {
                 </div>
                 <div class="bottomContainer">
                     <div class="aboutMe">
-                        <div class="introduction">
+                        <div class="introduction" style={{marginBottom: '20px'}}>
                             Hey, my name is Dan.
                         </div>                        
-                        <img src={headshot} alt="me" height={400} width={270}/>
+                        <img src={headshot} alt="me" height={400} width={270} style={{marginBottom: '20px'}}/>
                         <div class="preface">
-                        I'm an aspiring software engineer. 
+                        I'm a software engineer.
                         </div>
                         <div class="preface" style={{borderBottom: '2px solid #BFA181', paddingBottom: '20px'}}>
-                            Before I show you some of my work, here are some insights about my connection with computer science.
+                            Before I show you some of my work, here's a little bit about my connection with computer science.
                         </div>
                         <div class="paragraph" style={{paddingTop: '75px'}}>
                             Computer science, to me, is not just a field of study but an outlet for creativity.
                             I have always loved tinkering with the technology around me and figuring out how things work.
                             Computer science gives me the opportunity to solve intricate problems in creative ways. It 
                             offers the unique potential to transform the world, and my primary motivation lies in
-                            developing impactful solutions that address real-world challenges. Whether for healthcare, 
+                            developing solutions that address real-world challenges. Whether for healthcare, 
                             environmental sustainability, or education, each line of code is a step towards a better future.
                         </div>
                         <div class="paragraph">
                             My main career goal is to align with an organization that shares my perspective on the transformative 
-                            power of computer science.  I am deeply passionate about creating dependable software that is accessible
-                            to everyone and am particularly driven to harness AI and machine learning to foster positive change. The 
-                            potential of AI to revolutionize mental healthcare and offer life-changing support to those affected by 
-                            mental illness truly resonates with me. I would love to contribute and grow in an environment that is actively
+                            power of computer science.  I am very passionate about creating dependable software that is accessible
+                            to everyone. The potential of AI to revolutionize mental healthcare and offer life-changing support to those affected by 
+                            mental illness is something that especially resonates with me. I would love to contribute to and grow in an environment that is actively
                             shaping solutions that heal and empower others.
                         </div>
                         <span class="conclusion">
                             If you've taken the time to read through everything, feel free to explore some of my projects below!
                         </span>
                         <div style={{height: '10px'}}/>
-                    </div>       
+                    </div>   
+                    <div class="body" id="projects">
+                        <div class="section">
+                            <div class="introduction">
+                                Here is some more information about my employment history.
+                            </div>
+                        </div>
+                        <div class="projects">
+                            <div class="section">
+                                <div class="links" style={{borderTop: '2px solid #BFA181' }}>
+                                    <div class="name" style={{marginTop: '50px'}}>Capital Technology Group </div>
+                                    <h3>Tech: React, React NativeTypeScript, SpringBoot, Python, PostgreSQL, Docker</h3>
+                                    <a href="https://capitaltg.com">
+                                        <img src={capitaltg} alt="chirp" height="200" width="220"/>
+                                    </a>
+                                    <p style={{ marginBottom: '50px'}}>
+                                    I've worked with Capital Technology Group full-time since May 2025. I've worked on one project, which included a React Native app, a React web app, and a SpringBoot backend
+                                    during my full time employment. Although my time at Capital Technology Group has been short so far, I've learned an incredible amount from both my peers and my work and I'm grateful
+                                    to be working with such a great team. While at CTG, I've worked on all parts of the application, from the mobile application to an admin-only web app. I've worked on both the frontend
+                                    and the backend, and I've learned a lot about the agile development process. Some of the most tasks I've worked through were integrating a PKCE flow for our web app, 
+                                    refactoring backend logic for our mobile app, and fixing both design and logic bugs within our mobile app. I'm proud of the work we've been able to accomplish,
+                                     and I'm excited to continue learning from my peers and growing my skills in the future to become a more well-rounded engineer.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="section">
+                                <div class="links" style={{borderBottom: '0px'}}>
+                                    <a style={{textDecoration: 'none'}} href="https://compass.capitaltg.com/decisions">
+                                        <div class="name" style={{marginTop: '50px'}}>
+                                            Compass
+                                        </div>
+                                    </a>
+                                    <h3>Tech: React, TypeScript, PostgreSQL, Python, OpenAI API</h3>
+                                    <p >
+                                    This is a project I worked on while interning at Capital Technology Group. My team and I were tasked with creating an internal tool that
+                                     would help our company make decisions about government contract bid decision protests. We used a combination of React, TypeScript, 
+                                     PostgreSQL, and Python to create the tool. It's a web application that allows users to search through over 800,000 government 
+                                     contract PDFs, and extract the relevant information to help them make decisions about bidding on a contract. Users can search by 
+                                     text inside of the documents the attorneys involved, and by the company, agency, or law firm involved. I built out the backend
+                                     logic for searching by text using elasticsearch, as well as the logic for querying our SQL database to filter by the other fields.
+                                     I also helped out with the overall design and architecture of the project, and writing docker scripts to help with the CI/CD pipeline.
+                                     This project was a great learning experience, and I'm proud of the work we were able to accomplish in such a short amount of time. 
+                                     The skills I gained from this project have translated well to my current role, and I'm grateful for the opportunity to have worked on this project.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="body" id="projects">
                         <div class="section">
                             <div class="introduction">
@@ -194,24 +240,6 @@ function App() {
                                                 here is the full research report
                                             </a>
                                         </span>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="section">
-                                <div class="links">
-                                    <a href="https://studbuddy.netlify.app/" style={{textDecoration: 'none'}}>
-                                        <div class="name">StudyBuddy</div>
-                                    </a>
-                                    <h3>Tech: React Native, TypeScript, Expo, Firebase</h3>
-                                    <a href="https://studbuddy.netlify.app/">
-                                        <img src={studybuddy} alt="studybuddy" height="200" width="220"/>
-                                    </a>
-                                    <p style={{ marginBottom: '50px'}}>
-                                    This was my first time using React Native and Expo. I thought a great way to learn the basics would be to 
-                                    make a file storage/sharing app similar to Google Drive.
-                                    With StudyBuddy, users can either choose any file from their system, or make a text file inside of the app.
-                                    They can also share these files with people they add as friends, via user ID.
-                                    It's really neat to look back on this and see how far I've come!
                                     </p>
                                 </div>
                             </div>

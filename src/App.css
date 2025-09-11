@@ -93,13 +93,13 @@
 }
 
 .preface {
-    font-size: 16px;
+    font-size: 20px;
     color: #BFA181;
     font-weight: 200;
 }
 
 .paragraph {
-    font-size: 16px;
+    font-size: 18px;
     color: #BFA181;
     margin-top: 12px;
     font-weight: 400;
@@ -134,6 +134,7 @@
 .links {
     margin-top: 50px;
     border-bottom: 2px solid #BFA181;
+    font-size: 18px;
 }
 
 .thankYou {
