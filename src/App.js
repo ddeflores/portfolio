@@ -150,6 +150,7 @@ function App() {
                                             Compass
                                         </div>
                                     </a>
+                                    
                                     <h3>Tech: React, TypeScript, PostgreSQL, Python, OpenAI API</h3>
                                     <p >
                                     This is a project I worked on while interning at Capital Technology Group. My team and I were tasked with creating an internal tool that
