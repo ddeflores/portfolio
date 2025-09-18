@@ -166,8 +166,7 @@ function App() {
                     Capital Technology Group{" "}
                   </div>
                   <h3>
-                    Tech: React, React Native, TypeScript, SpringBoot, Python,
-                    PostgreSQL, Docker
+                    Tech: React, React Native, TypeScript, Java SpringBoot
                   </h3>
                   <a href="https://capitaltg.com">
                     <img src={capitaltg} alt="chirp" height="200" width="220" />
@@ -180,16 +179,17 @@ function App() {
                     Technology Group has been short so far, I've learned an
                     incredible amount from both my peers and my work and I'm
                     grateful to be working with such a great team. While at CTG,
-                    I've worked on all parts of the application, from the mobile
+                    I've worked on all parts of our project, from the mobile
                     application to an admin-only web app. I've worked on both
                     the frontend and the backend, and I've learned a lot about
-                    the agile development process. Some of the most tasks I've
-                    worked through were integrating a PKCE flow for our web app,
-                    refactoring backend logic for our mobile app, and fixing
-                    both design and logic bugs within our mobile app. I'm proud
-                    of the work we've been able to accomplish, and I'm excited
-                    to continue learning from my peers and growing my skills in
-                    the future to become a more well-rounded engineer.
+                    the agile development process. Some of the most rewarding
+                    tasks I've worked through were integrating a PKCE
+                    authenticaion flow for our web app, refactoring backend
+                    logic for our mobile app, and fixing both design and logic
+                    bugs within our mobile app. I'm proud of the work we've been
+                    able to accomplish, and I'm excited to continue learning
+                    from my peers and growing my skills in the future to become
+                    a more well-rounded engineer.
                   </p>
                 </div>
               </div>
@@ -199,35 +199,33 @@ function App() {
                     style={{ textDecoration: "none" }}
                     href="https://compass.capitaltg.com/decisions"
                   >
-                    <div class="name" style={{ marginTop: "50px" }}>
-                      Compass
-                    </div>
+                    <div style={{ marginTop: "50px" }}>Compass</div>
                   </a>
                   <h3>
-                    Tech: React, TypeScript, PostgreSQL, Python, OpenAI API
+                    Tech: React, TypeScript, Java SpringBoot, PostgreSQL,
+                    Python, Docker
                   </h3>
                   <p>
-                    This is a project I worked on while interning at Capital
-                    Technology Group. My team and I were tasked with creating an
-                    internal tool that would help our company make decisions
-                    about government contract bid decision protests. We used a
-                    combination of React, TypeScript, PostgreSQL, and Python to
-                    create the tool. It's a web application that allows users to
-                    search through over 800,000 government contract PDFs, and
-                    extract the relevant information to help them make decisions
-                    about bidding on a contract. Users can search by text inside
-                    of the documents the attorneys involved, and by the company,
-                    agency, or law firm involved. I built out the backend logic
-                    for searching by text using elasticsearch, as well as the
-                    logic for querying our SQL database to filter by the other
-                    fields. I also helped out with the overall design and
-                    architecture of the project, and writing docker scripts to
-                    help with the CI/CD pipeline. This project was a great
-                    learning experience, and I'm proud of the work we were able
-                    to accomplish in such a short amount of time. The skills I
-                    gained from this project have translated well to my current
-                    role, and I'm grateful for the opportunity to have worked on
-                    this project.
+                    Compass is a project I worked on while interning at Capital
+                    Technology Group during the summer of 2024. My team and I
+                    were tasked with creating an internal tool that would help
+                    our company make decisions about government contract bid
+                    decision protests. It's a web application that allows users
+                    to search through over 800,000 government contract PDFs, and
+                    extract the relevant information to help decide whether to
+                    protest the outcomes of government bid decisions. Users can
+                    search by the text inside of the documents, the attorneys
+                    involved, and by the company, agency, or law firm involved.
+                    I built out the backend logic for searching by text using
+                    elasticsearch, as well as the logic for querying our SQL
+                    database to apply filters for the other fields. I also
+                    helped out with the overall design and architecture of the
+                    project, and writing docker scripts to help with the CI/CD
+                    pipeline. This project was a great learning experience, and
+                    I'm proud of the work we were able to accomplish in such a
+                    short amount of time. The skills I gained from this project
+                    have translated well to my current role, and I'm grateful
+                    for the opportunity to have worked on this project.
                   </p>
                 </div>
               </div>
