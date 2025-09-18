@@ -195,11 +195,9 @@ function App() {
               </div>
               <div class="section">
                 <div class="links" style={{ borderBottom: "0px" }}>
-                  <a style={{ textDecoration: "none" }}>
-                    <div class="name" style={{ marginTop: "50px" }}>
-                      Compass
-                    </div>
-                  </a>
+                  <div class="name" style={{ marginTop: "50px" }}>
+                    Compass
+                  </div>
                   <h3>
                     Tech: React, TypeScript, Java SpringBoot, PostgreSQL,
                     Python, Docker
