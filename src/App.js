@@ -195,10 +195,7 @@ function App() {
               </div>
               <div class="section">
                 <div class="links" style={{ borderBottom: "0px" }}>
-                  <a
-                    style={{ textDecoration: "none" }}
-                    href="https://compass.capitaltg.com/decisions"
-                  >
+                  <a style={{ textDecoration: "none" }}>
                     <div class="name" style={{ marginTop: "50px" }}>
                       Compass
                     </div>
