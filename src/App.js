@@ -199,7 +199,9 @@ function App() {
                     style={{ textDecoration: "none" }}
                     href="https://compass.capitaltg.com/decisions"
                   >
-                    <div style={{ marginTop: "50px" }}>Compass</div>
+                    <div class="name" style={{ marginTop: "50px" }}>
+                      Compass
+                    </div>
                   </a>
                   <h3>
                     Tech: React, TypeScript, Java SpringBoot, PostgreSQL,
